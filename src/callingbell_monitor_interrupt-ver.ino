@@ -366,6 +366,7 @@ void setup() {
     WiFi.onEvent(onWiFiEvent);
     WiFi.mode(WIFI_STA);
     WiFi.setSleep(true);  // modem sleep reduces radio power and heat
+    // WiFi.setTxPower(WIFI_POWER_8_5dBm); // for ESP32-C3 Supermini
     WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
     DLOGLN("[WIFI] connecting...");
 
